@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Zoltan Mark Mundrucz">
+  <title>GeoNames APIs Table</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <h1>GeoNames APIs Table</h1>
+  <table>
+    <tr>
+      <th>API Name</th>
+      <th>Search</th>
+      <th>Submit</th>
+    </tr>
+    <tr>
+      <td class="search">Earthquakes</td>
+      <td><input type="text" id="searchCountry1" placeholder="Example: Turkey"></td>
+      <td><button id="getEarthquakes">Submit</button></td>
+    </tr>
+    <tr>
+      <td class="result">
+        Date and Time: 
+      </td>
+      <td id="txtDateTime">
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="result">
+        Depth: 
+      </td>
+      <td id="txtDepth">
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="result">
+        Magnitude: 
+      </td>
+      <td id="txtMagnitude">
+        
+      </td>
+    </tr>
+    <tr>
+      <td id="txtErrorEarthquakes" class="txtError">
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="search">Timezone</td>
+      <td><input type="text" id="searchCountry2" placeholder="Example: United Kingdom"></td>
+      <td><button id="getTimezone">Submit</button></td>
+    </tr>
+    <tr>
+      <td class="result">
+        Time: 
+      </td>
+      <td id="txtTime">
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="result">
+        Sunrise: 
+      </td>
+      <td id="txtSunrise">
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="result">
+        Sunset: 
+      </td>
+      <td id="txtSunset">
+        
+      </td>
+    </tr>
+    <tr>
+      <td id="txtErrorTimezone" class="txtError">
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="search">Find places by postcode in UK</td>
+      <td><input type="text" id="searchAddress" placeholder="Example: OX13PW"></td>
+      <td><button id="getPostalcode">Submit</button></td>
+    </tr>
+    <tr>
+      <td class="result">
+        Country code: 
+      </td>
+      <td id="txtCountry">
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="result">
+        County: 
+      </td>
+      <td id="txtCounty">
+        
+      </td>
+    </tr>
+    <tr>
+      <td class="result">
+        City: 
+      </td>
+      <td id="txtCity">
+        
+      </td>
+    </tr>
+    <tr>
+      <td id="txtErrorPostalcode" class="txtError">
+        
+      </td>
+    </tr>
+  </table>
+
+  <script type="application/javascript" src="js/jquery-3.6.0.js"></script>
+  <script type="application/javascript" src="js/script.js"></script>
+</body>
+</html>
